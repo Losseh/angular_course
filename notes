@@ -1,0 +1,17 @@
+* installing nodejs/npm
+sudo apt install nodejs
+-- then somehow upgrade nodejs to 14 or any version you want
+
+sudo npm install npm@latest -g
+sudo npm install -g @angular/cli
+
+* create project
+ng new --minimal customer-manager
+
+* start serwera i start apki w domyślnej przeglądarce
+ng serve -o
+
+* run simple typescript file
+npm install -g typescript
+npm install -g ts-node
+ts-node ts-file.ts
