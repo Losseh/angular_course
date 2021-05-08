@@ -28,3 +28,24 @@ console.log(ggg);
 
 console.log(`xs[0] = ${xs[0] + 5}, zs[0] = ${zs[0]}`);
 
+function welcome(name: string, age?: number, footSize: number = 39): string {
+    return `Welcome ${name}`;
+}
+
+function welcome1(...names: string[]): string {
+    return `Welcome ${names.join(', ')}`;
+}
+
+function basic_welcome(name: string) {
+    return `Welcome ${name}`;
+}
+
+// console.log(welcome('Adrian', 30));
+// console.log(welcome1('Adrian', 'Justyna', 'Tymon'));
+
+let names: Array<string> = ['Adrian', 'Justyna', 'Tymon'];
+// console.log(names.map(basic_welcome));
+
+// anonymous functions / lambdas
+// console.log(names.map((name: string) => `Welcome ${name}`));
+console.log(names.map(name => `Welcome ${name}`));
